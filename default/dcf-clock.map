@@ -1,0 +1,477 @@
+Archive member included because of file (symbol)
+
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              dcf-clock.o (__udivmodhi4)
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o (exit)
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              dcf-clock.o (__do_copy_data)
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              dcf-clock.o (__do_clear_bss)
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+                              dcf-clock.o (itoa)
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+                              c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o) (strrev)
+
+Allocating common symbols
+Common symbol       size              file
+
+millisecond         0x2               dcf-clock.o
+dcf_hour            0x1               dcf-clock.o
+dcf_timezone        0x1               dcf-clock.o
+dcf_week_day        0x1               dcf-clock.o
+dcf_hour_parity     0x1               dcf-clock.o
+dcf_year            0x1               dcf-clock.o
+leapyear            0x1               dcf-clock.o
+month               0x1               dcf-clock.o
+second              0x1               dcf-clock.o
+dcf_day             0x1               dcf-clock.o
+minute              0x1               dcf-clock.o
+timezone            0x1               dcf-clock.o
+hour                0x1               dcf-clock.o
+week_day            0x1               dcf-clock.o
+dataPC              0x1               dcf-clock.o
+dcf_minute_parity   0x1               dcf-clock.o
+year                0x2               dcf-clock.o
+day                 0x1               dcf-clock.o
+dcf_minute          0x1               dcf-clock.o
+dcf_date_parity     0x1               dcf-clock.o
+dcf_second          0x1               dcf-clock.o
+dcf_month           0x1               dcf-clock.o
+itoa_buffer         0x8               dcf-clock.o
+counter_low         0x2               dcf-clock.o
+counter_high        0x2               dcf-clock.o
+bit_number          0x1               dcf-clock.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+LOAD dcf-clock.o
+LOAD lcd-routines.o
+LOAD c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xac0
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x00000054       0x78 dcf-clock.o
+ *(.progmem*)
+                0x000000cc                . = ALIGN (0x2)
+                0x000000cc                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000cc        0x0 linker stubs
+ *(.trampolines*)
+                0x000000cc                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000cc                __ctors_start = .
+ *(.ctors)
+                0x000000cc                __ctors_end = .
+                0x000000cc                __dtors_start = .
+ *(.dtors)
+                0x000000cc                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000cc        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x000000cc                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000cc        0xc c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000d8       0x16 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x000000d8                __do_copy_data
+ .init4         0x000000ee       0x10 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x000000ee                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000fe        0x8 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init9)
+ *(.text)
+ .text          0x00000106        0x4 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000106                __vector_1
+                0x00000106                __vector_12
+                0x00000106                __bad_interrupt
+                0x00000106                __vector_6
+                0x00000106                __vector_3
+                0x00000106                __vector_11
+                0x00000106                __vector_13
+                0x00000106                __vector_17
+                0x00000106                __vector_7
+                0x00000106                __vector_5
+                0x00000106                __vector_4
+                0x00000106                __vector_9
+                0x00000106                __vector_2
+                0x00000106                __vector_15
+                0x00000106                __vector_8
+                0x00000106                __vector_14
+                0x00000106                __vector_10
+                0x00000106                __vector_16
+                0x00000106                __vector_18
+                0x00000106                __vector_20
+ .text          0x0000010a      0x7b8 dcf-clock.o
+                0x00000706                dcf_0
+                0x0000037c                show_matched_time
+                0x00000136                dcf_time_reset
+                0x00000580                dcf_1
+                0x0000031e                match_date
+                0x000004f2                dcf_sync
+                0x00000188                __vector_19
+                0x00000120                dcf_date_reset
+                0x0000088c                main
+                0x0000041c                show_matched_date
+                0x0000034a                match_time
+                0x0000010a                counter_reset
+                0x00000370                leading_0
+                0x0000014c                leap_year
+                0x00000740                level_analysis
+ .text          0x000008c2      0x170 lcd-routines.o
+                0x000009da                lcd_data
+                0x0000090c                lcd_clear
+                0x000009ae                set_cursor
+                0x0000099e                lcd_home
+                0x00000a18                lcd_string
+                0x00000900                lcd_enable
+                0x0000091c                lcd_init
+                0x000008c2                lcd_command
+ .text          0x00000a32        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000a32        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000a32        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000a32        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000a32        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+ .text          0x00000a32        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x00000a32                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000a32       0x28 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000a32                __udivmodhi4
+ .text.libgcc   0x00000a5a        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000a5a        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000a5a        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x00000a5a       0x42 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+                0x00000a5a                itoa
+ .text.avr-libc
+                0x00000a9c       0x20 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x00000a9c                strrev
+                0x00000abc                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000abc        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000abc                exit
+                0x00000abc                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000abc        0x4 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000ac0                _etext = .
+
+.data           0x00800060       0x34 load address 0x00000ac0
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .data          0x00800060       0x34 dcf-clock.o
+ .data          0x00800094        0x0 lcd-routines.o
+ .data          0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+ .data          0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800094                . = ALIGN (0x2)
+                0x00800094                _edata = .
+                0x00800094                PROVIDE (__data_end, .)
+
+.bss            0x00800094       0x25
+                0x00800094                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x00800094        0x0 dcf-clock.o
+ .bss           0x00800094        0x0 lcd-routines.o
+ .bss           0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+ .bss           0x00800094        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800094       0x25 dcf-clock.o
+                0x00800094                millisecond
+                0x00800096                dcf_hour
+                0x00800097                dcf_timezone
+                0x00800098                dcf_week_day
+                0x00800099                dcf_hour_parity
+                0x0080009a                dcf_year
+                0x0080009b                leapyear
+                0x0080009c                month
+                0x0080009d                second
+                0x0080009e                dcf_day
+                0x0080009f                minute
+                0x008000a0                timezone
+                0x008000a1                hour
+                0x008000a2                week_day
+                0x008000a3                dataPC
+                0x008000a4                dcf_minute_parity
+                0x008000a5                year
+                0x008000a7                day
+                0x008000a8                dcf_minute
+                0x008000a9                dcf_date_parity
+                0x008000aa                dcf_second
+                0x008000ab                dcf_month
+                0x008000ac                itoa_buffer
+                0x008000b4                counter_low
+                0x008000b6                counter_high
+                0x008000b8                bit_number
+                0x008000b9                PROVIDE (__bss_end, .)
+                0x00000ac0                __data_load_start = LOADADDR (.data)
+                0x00000af4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000b9        0x0
+                0x008000b9                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000b9                PROVIDE (__noinit_end, .)
+                0x008000b9                _end = .
+                0x008000b9                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x40
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 dcf-clock.o
+ .debug_aranges
+                0x00000020       0x20 lcd-routines.o
+
+.debug_pubnames
+                0x00000000      0x2ef
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x26b dcf-clock.o
+ .debug_pubnames
+                0x0000026b       0x84 lcd-routines.o
+
+.debug_info     0x00000000      0xb6c
+ *(.debug_info)
+ .debug_info    0x00000000      0x4a8 dcf-clock.o
+ .debug_info    0x000004a8      0x6c4 lcd-routines.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x279
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x14e dcf-clock.o
+ .debug_abbrev  0x0000014e      0x12b lcd-routines.o
+
+.debug_line     0x00000000      0xc52
+ *(.debug_line)
+ .debug_line    0x00000000      0x85a dcf-clock.o
+ .debug_line    0x0000085a      0x3f8 lcd-routines.o
+
+.debug_frame    0x00000000      0x190
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x100 dcf-clock.o
+ .debug_frame   0x00000100       0x90 lcd-routines.o
+
+.debug_str      0x00000000      0x2f7
+ *(.debug_str)
+ .debug_str     0x00000000      0x230 dcf-clock.o
+                                0x299 (size before relaxing)
+ .debug_str     0x00000230       0xc7 lcd-routines.o
+                                0x198 (size before relaxing)
+
+.debug_loc      0x00000000      0x233
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x6a dcf-clock.o
+ .debug_loc     0x0000006a      0x1c9 lcd-routines.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(dcf-clock.elf elf32-avr)
+LOAD linker stubs
