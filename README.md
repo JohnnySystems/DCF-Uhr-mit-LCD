@@ -2,13 +2,14 @@
 Einfache DCF77-Uhr mit Character-LCD auf einem ATmega16
 
 Programmiert im AVR Studio (mit AVR-GCC)
+
 Hardware:
-STK500
-ATmega16
-16MHz Quarz
-20×4 Zeichen LCD (HD44780 kompatibel)
-DCF77-Empfangsmodul von Conrad (641138) (PullUp-Widerstand 10k zwischen
-Anschluß 2 und 4)
+
+- STK500
+- ATmega16
+- 16MHz Quarz
+- 20×4 Zeichen LCD (HD44780 kompatibel)
+- DCF77-Empfangsmodul von Conrad (641138) (PullUp-Widerstand 10k zwischen Anschluß 2 und 4)
 
 Die LCD-Ansteuerung habe ich aus dem Tutorial übernommen, vielen Dank an
 den Autor an dieser Stelle
